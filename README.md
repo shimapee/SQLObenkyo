@@ -87,5 +87,5 @@ ORA_URL=*jdbc:oracle:thin:@hogehoge.com:1521:fuga*
 ORA_USR=*scott*  
 ORA_PAS=*tiger*  
 ORA_SCH=*HOGE*  
-ORA_AUTH_USR=*john*
-ORA_AUTH_PAS=*panther*
+ORA_AUTH_USR=*john*  
+ORA_AUTH_PAS=*panther*  
