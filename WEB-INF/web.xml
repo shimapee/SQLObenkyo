@@ -1,20 +1,13 @@
-# SQLObenkyo
-#### SQLお勉強　Webアプリケーション
-
-SQLの実行結果を取得するだけのWEBシステムです。  
-テーブル一覧ではテーブルの一覧及び定義項目を出力できます。  
-Oralceを対象としていますので、他のRDBMSではテーブル一覧は取れないです。  
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+version="2.4">
+  <mime-mapping>
+    <extension>html</extension>
+    <mime-type>text/html; charset=UTF-8</mime-type>
+  </mime-mapping>
   
-  
-
-#### 外部ライブラリ  
-- Bootstrap v3.3.5  
-- jQuery 1.11.3  
-- OJDBC6.jar  
-- commons-lang3-3.4.jar  
-
-
-#### Web.xml記述例
 	<servlet>
 		<servlet-name>exec</servlet-name>
 		<servlet-class>com.tbkobenkyo.sql.controllers.ExecController</servlet-class>
@@ -77,15 +70,4 @@ Oralceを対象としていますので、他のRDBMSではテーブル一覧は
 		<servlet-name>changepw</servlet-name>
 		<url-pattern>/changepw</url-pattern>
 	</servlet-mapping>
-  
-	
-	
-	
-#### SQLObenkyo.properties記述例
-###### ORA_SCHは大文字
-ORA_URL=*jdbc:oracle:thin:@hogehoge.com:1521:fuga*  
-ORA_USR=*scott*  
-ORA_PAS=*tiger*  
-ORA_SCH=*HOGE*  
-ORA_AUTH_USR=*john*
-ORA_AUTH_PAS=*panther*
+</web-app>
