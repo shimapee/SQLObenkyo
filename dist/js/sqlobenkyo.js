@@ -44,8 +44,8 @@ $(function(){
 		var nm = data.user;
 		console.log(nm);
 		if(nm != 0) {
-			$("nav").removeClass("navbar-default");
-			$("nav").addClass("navbar-inverse");
+			$("nav").removeClass("navbar-inverse");
+			$("nav").addClass("navbar-default");
 			$("button#action").after(
 				"<button class=\"btn btn-success\" id=\"commit\">" +
 				"<span class=\"glyphicon glyphicon-ok\" aria-hidden=\"true\"></span>" +

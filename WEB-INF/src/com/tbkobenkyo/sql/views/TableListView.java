@@ -26,7 +26,7 @@ public class TableListView {
 			out.append("<tr>");
 			for(int j = 0; j < ((List<String>) list.get(i)).size(); j++) {
 				out.append("<td>");
-				out.append("<a id='"+StringEscapeUtils.escapeHtml4(((List<String>) list.get(i)).get(j))+"'>");
+				out.append("<a style='cursor: pointer' id='"+StringEscapeUtils.escapeHtml4(((List<String>) list.get(i)).get(j))+"'>");
 				out.append(StringEscapeUtils.escapeHtml4(((List<String>) list.get(i)).get(j))+"</a>");
 				out.append("</td>");
 			}
